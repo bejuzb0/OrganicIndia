@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_marginVertical="5dp"
+        app:queryHint="Search by PhoneNumber"
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.appcompat.widget.SearchView>
+
+    <include
+        layout="@layout/items_existing">
+    </include>
+
+    <Button
+        android:id="@+id/save_button"
+        android:background="@drawable/button"
+        android:text="SAVE"
+        android:layout_marginVertical="5dp"
+        android:textColor="#FFF"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </Button>
+
+</LinearLayout>
